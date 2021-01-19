@@ -1,0 +1,17 @@
+{
+  "name": "nativescript-all-settings",
+  "author": {
+    "name": "dan",
+  },
+  "version": "1.1.0",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0",
+      "android": "3.0.0"
+    }
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/dbligh/NSSettings.git"
+  }
+}
