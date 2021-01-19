@@ -5,7 +5,11 @@ Extension of nativescript-wifi-settings project to include more settings.
 ## Installation
 
 ```bash
-npm install git+https://github.com/dbligh/NSSettings.git
+tns plugin add git+https://github.com/dbligh/NSSettings.git
+
+or
+
+npm install git+https://github.com/dbligh/NSSettings.git --save
 ```
 
 ## Usage
@@ -13,7 +17,8 @@ npm install git+https://github.com/dbligh/NSSettings.git
 ```javascript
 const settings = require("nativescript-all-settings");
 
-settings.openSettingsOnDevice();
+settings.openWifiSettingsOnDevice();
+settings.openSecuritySettingsOnDevice();
 ```
 
 ## Contributing
