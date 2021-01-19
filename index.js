@@ -1,5 +1,5 @@
 var Device = require("./Device");
 
 module.exports = {
-  openWifiSettingsOnDevice: Device.openWifiSettingsOnDevice,
+  openSettingsOnDevice: Device.openSettingsOnDevice,
 };
