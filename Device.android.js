@@ -38,4 +38,18 @@ module.exports = {
     ctx.startActivity(intent);
     return true;
   },
+  openSecuritySettingsOnDevice: function() {
+    var ctx = getAppContext();
+    if (TypeUtils.isNullOrUndefined(ctx)) {
+      return false;
+    }
+
+    var intent = new android.content.Intent(
+      android.provider.Settings.ACTION_SECURITY_SETTINGS,
+    );
+    intent.addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK);
+
+    ctx.startActivity(intent);
+    return true;
+  },
 };

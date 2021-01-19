@@ -31,4 +31,14 @@ module.exports = {
 
     return false;
   },
+  openSecuritySettingsOnDevice: function() {
+    var uris = ["prefs:root=Security", "App-Prefs:root=Security"];
+    for (var i = 0; i < uris.length; i++) {
+      if (openUri(uris[i])) {
+        return true;
+      }
+    }
+
+    return false;
+  },
 };
