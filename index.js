@@ -1,5 +1,6 @@
 var Device = require("./Device");
 
 module.exports = {
-  openSettingsOnDevice: Device.openSettingsOnDevice,
+  openWifiSettingsOnDevice: Device.openWifiSettingsOnDevice,
+  openSecuritySettingsOnDevice: Device.openSecuritySettingsOnDevice
 };
