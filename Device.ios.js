@@ -32,7 +32,7 @@ module.exports = {
     return false;
   },
   openSecuritySettingsOnDevice: function() {
-    var uris = ["prefs:root=Security", "App-Prefs:root=Security"];
+    var uris = ["prefs:root=TOUCHID_PASSCODE", "App-Prefs:root=TOUCHID_PASSCODE"];
     for (var i = 0; i < uris.length; i++) {
       if (openUri(uris[i])) {
         return true;
